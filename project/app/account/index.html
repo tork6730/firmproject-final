@@ -1,0 +1,33 @@
+﻿
+<h1>My Account</h1>
+<div class="form-container col-lg-6 col-md-6 col-sm-6 col-xl-6">
+    <form method="post">
+        <div class="form-group">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" class="form-control" ng-model="vm.user.fullName" required />
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" class="form-control" ng-model="vm.user.phone" required />
+        </div>
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" ng-model="vm.user.username" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" ng-model="vm.user.password" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.saveUser()">Save</button>
+            <button class="btn btn-danger" ng-click="vm.deleteUser()">Delete</button>
+        </div>
+        <div ng-repeat="list in vm.user
+        ">
+        <label>{{list}}</label>
+        </div>
+      
+    </form>
+</div>

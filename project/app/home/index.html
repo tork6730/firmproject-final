@@ -1,0 +1,96 @@
+﻿
+<h1>Hi {{vm.user.fullName}}!!</h1>
+
+<div class="container-fluid">
+    <div class="">
+        <div class="col-md-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h1>Add Item</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <div class="col-md-6 text-center form-group">
+                                <label>Add Client</label>
+                                <button><img id="person" src="img/image-of-person-sspeck-hi.png"></button>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <label>Add Case</label>
+                                <button><img id="case" src="img/folder-icon.jpg"></button>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="col-md-6 text-center">
+                                <label>Add Bill</label>
+                                <button><img id="invoice" src="img/invoices-icon-22.png"></button>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <label>Add Attorney</label>
+                                <button><img ng-click="" id="attorney" src="img/attorney.png"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="col-md-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h1>Contact Client</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Subject</label>
+                        <input type="text" class="form-control" id="subjectInput" placeholder="What can we help you with?">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Explain</label>
+                        <textarea type="text" class="form-control" rows="3" placeholder="Please Explain..."></textarea>
+                    </div>
+                    <div class="form-group pull-right">
+                        <label for="">Choose a Client/Case</label>
+                        <select></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox"> Would you like an email copy of this message?
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <div class="col-md-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h1>Recents Activity</h1>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Cases</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
