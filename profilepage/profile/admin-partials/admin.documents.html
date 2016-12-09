@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title pull-left">Documents</h3>
+            <div class="btn-group pull-right">
+                <button type="button" id="admin-CaseDocs" ng-model="admin-CaseDocs" ng-click="" class="btn btn-default">Case Documents</button>
+                <button type="button" id="admin-FirmDocs" ng-model="admin-FirmDocs" ng-click="" class="btn btn-default">Firm Documents</button>
+                <button type="button" id="admin-Templates" ng-model="admin-Templates" ng-click="" class="btn btn-default">Templates</button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Last Updated</th>
+                <th>Cases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td ng-repeat={{}}></td>
+                <td ng-repeat={{}}></td>
+                <td ng-repeat={{}}></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

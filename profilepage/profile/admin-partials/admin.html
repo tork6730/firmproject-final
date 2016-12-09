@@ -1,0 +1,18 @@
+<H1>Hello {{ name }}</H1>
+<header>
+    <ul class="nav nav-tabs">
+        <li ng-class="{active: activeTab === 'home'}"><a ui-sref="admin.home">Home</a></li>
+        <li ng-class="{active: activeTab === 'clients'}"><a ui-sref="admin.clients">Clients</a></li>
+        <li ng-class="{active: activeTab === 'cases'}"><a ui-sref="admin.cases">Cases</a></li>
+        <li ng-class="{active: activeTab === 'documents'}"><a ui-sref="admin.documents">Documents</a></li>
+        <li ng-class="{active: activeTab === 'account'}"><a ui-sref="admin.account">Account</a></li>
+        <li ng-class="{active: activeTab === 'attorneys'}"><a ui-sref="admin.attorneys">Attorneys</a></li>
+        <li><a href="/login" target="_self">Logout</a></li>
+    </ul>
+    <div class="flash-message" ng-if="flash">
+        <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
+    </div>
+</header>
+<div id="adminProfile" class="container">
+    <div ui-view></div>
+</div>

@@ -1,0 +1,72 @@
+<style>
+.panel-heading h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    width: 75%;
+    padding-top: 8px;
+}
+</style>
+<h1>Home</h1>
+<div class="container-fluid">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">Welcome {{vm.name}} --> name </h3>
+        </div>
+        <div class="panel-body col-sm-12">
+            <div>
+                <div>
+                    <div class="text-center">
+                        <a>Add Item</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-sm-4 text-center">
+                        <a ng-click="">Add Client</a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a ng-click="" class="attorneyResourceLink">Add Documents</a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a ng-click="">Add Case</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-sm-4 text-center">
+                    <a ng-click="">Add Message</a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a ng-click="">Add Bill</a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a ng-click="">Add Attorney</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 text-center attorneyImageThumbnail" ng-repeat="meta in vm.imageValues">
+                <img ng-src="http://localhost:3001/api/files/{{meta.imageId}}" height="100px" width="100px"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title pull-left">Recent Activity</h3>
+            <div class="btn-group pull-right">
+                <button type="button" id="" ng-click="" class="btn btn-default">All</button>
+                <button type="button" ng-click="" class="btn btn-default">Cases</button>
+                <button type="button" ng-click="" class="btn btn-default">Documents</button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="panel-body col-sm-12">
+</div>
+</div>
+</div>

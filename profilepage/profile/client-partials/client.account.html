@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <h1>Profile</h1>
+    <div class="">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title strong">Welcome {{name}}, Update your Information</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <div>
+                        <label>Name</label>
+                        <Input></Input>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <Input></Input>
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <Input></Input>
+                    </div>
+                    <div>
+                        <label>State</label>
+                        <Input></Input>
+                    </div>
+                    <div>
+                        <label>Zip Code</label>
+                        <Input></Input>
+                    </div>
+                    <div>
+                        <label>Username</label>
+                        <Input></Input>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <Input></Input>
+                    </div>
+                    <button class="btn btn-default" type="submit">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title strong">Your Current Information</h3>
+            </div>
+            <div class="panel-body">
+                <div ng-repeat="">{{Name}}</div>
+                <div ng-repeat="">{{Address}}</div>
+                <div ng-repeat="">{{City}}</div>
+                <div ng-repeat="">{{State}}</div>
+                <div ng-repeat="">{{Zip Code}}</div>
+                <div ng-repeat="">{{Username}</div>
+                <div ng-repeat="">{{Password}}</div>
+            </div>
+        </div>
+    </div>
+</div>
